@@ -7,6 +7,19 @@ class MovieReview extends Component {
             movies: [],
         }
     }
+
+    componentDidMount(){
+        fetch("https://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=20&api-key=1c4Xl5uOwljOzjIMKiBbmfIbRsB1NkZD").then((res) => res.json()).then((movies) => { this.setState({
+            movies: movies
+        });
+        console.log(movies)
+    }).catch((err) => {
+        console.log(err)
+    });
+    }
+
+    
+
     render() {
         return (
             <div>
