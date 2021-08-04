@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
 class MovieReview extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            movies: [],
+        }
+    }
     render() {
         return (
             <div>
