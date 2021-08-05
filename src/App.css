@@ -5,6 +5,10 @@
   font-weight: bolder;
 }
 
+#root {
+  background: #b1b4b4;
+}
+
 .App {
   text-align: center;
 }
